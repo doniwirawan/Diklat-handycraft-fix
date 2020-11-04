@@ -16,9 +16,9 @@
     <aside id="sidebar">
         <i class="fas fa-times desktop-none close-sidebar fa-3x"></i>
         <img src="{{ URL::to('img/logo.png') }}" alt="" class="logo">
-        <a href="{{ url('/') }}" class="active"><i class="fas fa-home m-3 "></i>Beranda</a>
-        <a href="{{ url('toko') }}"><i class="fas fa-store m-3"></i>Toko</a>
-        <a href="{{ url('kontak') }}"><i class="fas fa-address-book m-3"></i>Kontak</a>
+        <a href="{{ url('/') }}" class="{{ Request::is('/*') ? 'active' : '' }}"><i class="fas fa-home m-3 "></i>Beranda</a>
+        <a href="{{ url('toko') }}" class="{{ Request::is('toko*') ? 'active' : '' }}"><i class="fas fa-store m-3"></i>Toko</a>
+        <a href="{{ url('kontak') }}" class="{{ Request::is('kontak*') ? 'active' : '' }}"><i class="fas fa-address-book m-3"></i>Kontak</a>
     </aside>
     <nav >
         <img src="{{ URL::to('img/avatar.jpg') }}" alt="" class="avatar ml-2">
