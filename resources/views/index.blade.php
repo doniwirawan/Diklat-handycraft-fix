@@ -14,6 +14,7 @@
 
 <body>
     <aside id="sidebar">
+        <i class="fas fa-times desktop-none close-sidebar fa-3x"></i>
         <img src="{{ URL::to('img/logo.png') }}" alt="" class="logo">
         <a href="#" class="active"><i class="fas fa-home m-3 "></i>Beranda</a>
         <a href="#"><i class="fas fa-store m-3"></i>Toko</a>
@@ -68,9 +69,9 @@
 
 
             <div class="container-fluid">
-                <div class="row mt-4">
+                <div class="row mt-4 row-mobile">
                     <div class="col-sm">
-                        <div class="card" style="width: 100%;">
+                        <div class="card" >
                             <img src="https://images.unsplash.com/photo-1576495169018-bd2414046c6b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1294&q=80"
                                 class="card-img-top" alt="...">
                             <div class="card-body">
@@ -82,7 +83,7 @@
                         </div>
                     </div>
                     <div class="col-sm">
-                        <div class="card" style="width: 100%;">
+                        <div class="card" >
                             <img src="https://images.unsplash.com/photo-1503169483-419b860b9208?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=767&q=80"
                                 class="card-img-top" alt="...">
                             <div class="card-body">
@@ -94,7 +95,7 @@
                         </div>
                     </div>
                     <div class="col-sm">
-                        <div class="card" style="width: 100%;">
+                        <div class="card" >
                             <img src="https://images.unsplash.com/photo-1556850003-5adb86031c6b?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
                                 class="card-img-top" alt="...">
                             <div class="card-body">
