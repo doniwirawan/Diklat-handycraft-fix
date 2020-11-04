@@ -16,6 +16,14 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/', function () {
 //     return view('welcome');
 // });
+
 Route::get('/', function () {
-    return view('index');
+    return view('beranda');
+});
+
+Route::get('/toko', function () {
+    return view('toko');
+});
+Route::get('/kontak', function () {
+    return view('kontak');
 });
