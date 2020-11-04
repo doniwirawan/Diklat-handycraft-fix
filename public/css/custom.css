@@ -1,0 +1,182 @@
+* {
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+}
+
+@media (min-width:600px) {
+
+    aside {
+        width: 25%;
+        height: 100%;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        /* background-color: red; */
+        ;
+        padding-right: 20px;
+        padding-left: 100px;
+        -webkit-box-shadow: 0px 22px 45px -21px rgba(163, 163, 163, 0.56);
+        -moz-box-shadow: 0px 22px 45px -21px rgba(163, 163, 163, 0.56);
+        box-shadow: 0px 22px 45px -21px rgba(163, 163, 163, 0.56);
+        z-index: 999;
+        background-color: #f8fafc;
+
+    }
+
+    aside img {
+        width: 300px;
+        position: relative;
+        top: -100px;
+        left: 10px;
+    }
+
+    aside a {
+        display: block;
+        font-size: 28px;
+        ;
+        background-color: teal;
+        padding: 2px 0 0 50px;
+        margin: 5px 0;
+        color: #727272;
+        background-color: #F0EFEB;
+        border-radius: 50px;
+    }
+
+    aside .active {
+        background-color: #2A9D8F;
+        color: white;
+    }
+
+    aside .active:hover {
+        color: #F0EFEB;
+    }
+
+    aside a:hover {
+        text-decoration: none;
+        color: #2A9D8F;
+    }
+
+    nav {
+        position: fixed;
+        width: 75%;
+        top: 0;
+        right: 0;
+        display: flex;
+        /* background-color: yellow; */
+        align-items: center;
+        flex-direction: row;
+        padding: 10px;
+        padding-right: 100px;
+        -webkit-box-shadow: 0px 22px 45px -21px rgba(163, 163, 163, 0.56);
+        -moz-box-shadow: 0px 22px 45px -21px rgba(163, 163, 163, 0.56);
+        box-shadow: 0px 22px 45px -21px rgba(163, 163, 163, 0.56);
+        z-index: 999;
+        background-color: #f8fafc;
+    }
+
+    form input {
+        border-radius: 50px 0 0 50px !important;
+        height: 50px !important;
+        padding: 5px 40px !important;
+        border: 1px solid #727272 !important;
+    }
+
+
+    div .input-group-text {
+        border-radius: 0 50px 50px 0 !important;
+        height: 50px;
+        width: 70px !important;
+        border: 1px solid #727272;
+        background: white;
+        border-left: none;
+
+    }
+
+    .input-group-text .fas {
+        color: #727277;
+    }
+
+    nav form {
+        width: 85%;
+    }
+
+    nav .avatar {
+        width: 50px;
+        border-radius: 50%;
+        margin-top: -5px;
+        border: 2px solid #727272;
+    }
+
+    .icon {
+        display: relative;
+        right: 0;
+
+    }
+
+    .icon a {
+        color: #727272;
+    }
+
+    .main-content {
+        width: 75%;
+        min-height: 100vh;
+        display: relative;
+        /* background-color: red; */
+        margin-left: auto;
+        z-index: -1;
+        padding: 30px 100px 0 30px;
+        margin-top: 90px;
+    }
+
+    .content {
+        width: 100%;
+        min-height: 100vh;
+        background: white;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+
+    .carousel {
+        height: 500px;
+        border-radius: 20px 20px 0 0;
+    }
+
+    .carousel-inner {
+        height: 500px;
+        -webkit-box-shadow: 0px 22px 45px -21px rgba(163, 163, 163, 0.56);
+        -moz-box-shadow: 0px 22px 45px -21px rgba(163, 163, 163, 0.56);
+        box-shadow: 0px 22px 45px -21px rgba(163, 163, 163, 0.56);
+
+    }
+
+    .carousel-inner img {
+        object-fit: cover;
+    }
+
+    .card {
+        -webkit-box-shadow: 0px 22px 45px -21px rgba(163, 163, 163, 0.56);
+        -moz-box-shadow: 0px 22px 45px -21px rgba(163, 163, 163, 0.56);
+        box-shadow: 0px 22px 45px -21px rgba(163, 163, 163, 0.56);
+        border-radius: 20px !important;
+        ;
+    }
+
+    .card img {
+        height: 300px;
+        object-fit: cover;
+        border-radius: 20px 20px 0 0 !important;
+
+    }
+
+    .btn-doni {
+        background-color: #2A9D8F;
+        border-radius: 20px;
+        border: none;
+    }
+
+    .btn-doni:hover {
+        color: #2A9D8F;
+        background: #F0EFEB;
+        border: 1px solid #2A9D8F;
+    }
+}
