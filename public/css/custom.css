@@ -210,6 +210,13 @@ nav .avatar {
     color: #727272;
 }
 
+iframe {
+    width: 110%;
+    margin: 0 auto;
+    position: relative;
+    left: -20px;
+    height: 250px;
+}
 
 
 
@@ -446,4 +453,12 @@ nav .avatar {
         flex-direction: row;
     }
 
+    iframe {
+        width: 110%;
+        margin: 0 auto;
+        position: relative;
+        left: -20px;
+        height: 450px;
+
+    }
 }
