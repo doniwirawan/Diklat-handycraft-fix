@@ -37,7 +37,7 @@
                     @foreach($produk as $p)
                      <div class="col-sm inline-block">
                         <div class="card" >
-                            <img src="https://images.unsplash.com/photo-1576495169018-bd2414046c6b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1294&q=80"
+                            <img src="{{ $p->gambar_produk }}"
                                 class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">{{ $p->nama_produk }}</h5>
