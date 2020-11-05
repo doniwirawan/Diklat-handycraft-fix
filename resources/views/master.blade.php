@@ -27,7 +27,7 @@
     <nav>
         <a href="{{ route('login') }}"><img src="{{ URL::to('img/avatar.jpg') }}" alt="" class="avatar ml-2"></a>
         <li class="nav-item dropdown">
-            <a id="navbarDropdown" class="nav-link text-theme1 dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+            <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false" v-pre>
                 {{ Auth::user()->name }}
             </a>

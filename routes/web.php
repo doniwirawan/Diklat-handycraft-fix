@@ -23,14 +23,18 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/login', function () {
 //     return view('login');
 // });
-Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('beranda');
 
-Route::get('/toko', function () {
-    return view('toko');
-});
-Route::get('/kontak', function () {
-    return view('kontak');
-});
+Route::get('/toko', [App\Http\Controllers\HomeController::class, 'toko'])->name('toko');
+Route::get('/kontak', [App\Http\Controllers\HomeController::class, 'kontak'])->name('kontak');
+// Route::get('/kontak', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+// Route::get('/toko', function () {
+//     return view('toko');
+// });
+// Route::get('/kontak', function () {
+//     return view('kontak');
+// });
 
 Auth::routes();
 

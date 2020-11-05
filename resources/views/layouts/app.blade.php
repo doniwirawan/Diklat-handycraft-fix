@@ -17,14 +17,22 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
     <!-- Styles -->
+    <!-- Scripts -->
+    <script src="{{ asset('js/jquery.js') }}" defer></script>
+    <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="{{ asset('js/custom.js') }}" defer></script>
+
+    <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/login-register-custom.css') }}" rel="stylesheet" />
 </head>
 <body>
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
-            <div class="container">
+            <div class="container nav-container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Handycraft.co') }}
+                   <img src="{{ URL::to('img/logo.png') }}" alt="" class="logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -33,22 +41,35 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
-
+                            
                     </ul>
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                                    <a href="{{ url('/') }}" class="nav-link"><i
+                class="fas fa-home m-1 "></i>Beranda</a>
+                            </li>
+                        <li class="nav-item">
+                                    <a href="{{ url('toko') }}" class="nav-link"><i
+                class="fas fa-store m-1"></i>Toko</a>
+                            </li>
+                        <li class="nav-item">
+                                    <a href="{{ url('kontak') }}" class="nav-link"><i
+                class="fas fa-address-book m-1"></i>Kontak</a>
+                            </li>
+                            
                         <!-- Authentication Links -->
                         @guest
                             @if (Route::has('login'))
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="{{ route('login') }}"><i class="fas fa-user-circle m-1"></i>{{ __('Login') }}</a>
                                 </li>
                             @endif
                             
                             @if (Route::has('register'))
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="{{ route('register') }}"><i class="fas fa-sign-in-alt m-1"></i>{{ __('Register') }}</a>
                                 </li>
                             @endif
                         @else
