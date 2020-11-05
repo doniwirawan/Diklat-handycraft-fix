@@ -476,13 +476,19 @@ iframe {
         object-fit: cover;
     }
 
+
+    .inline-block {
+        display: inline-block;
+    }
+
     .card {
+        display: inline-block;
         -webkit-box-shadow: 0px 22px 45px -21px rgba(163, 163, 163, 0.56);
         -moz-box-shadow: 0px 22px 45px -21px rgba(163, 163, 163, 0.56);
         box-shadow: 0px 22px 45px -21px rgba(163, 163, 163, 0.56);
         border-radius: 20px !important;
         ;
-        width: 100%;
+        min-width: 25%;
         margin: 5px 0;
 
     }

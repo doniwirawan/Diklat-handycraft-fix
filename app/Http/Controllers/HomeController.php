@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class HomeController extends Controller
 {
@@ -23,14 +24,27 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('beranda');
+        $produk = DB::table('produk')->get();
+        
+        return view('beranda',['produk' => $produk ]);
     }
     public function toko()
     {
-        return view('toko');
+        $produk = DB::table('produk')->get();
+        return view('toko',['produk' => $produk ]);
+
     }
     public function kontak()
     {
         return view('kontak');
+    }
+    public function pesan(Request $request)
+    {
+        $x= 0;
+        DB::table('customer')->insert([
+		'alamat_email' => $request->email,
+		'pesan_customer' => $request->pesan,
+        ]);
+        return redirect('/kontak');
     }
 }
