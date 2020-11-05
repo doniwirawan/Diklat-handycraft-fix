@@ -28,6 +28,8 @@ Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('be
 Route::get('/toko', [App\Http\Controllers\HomeController::class, 'toko'])->name('toko');
 Route::get('/kontak', [App\Http\Controllers\HomeController::class, 'kontak'])->name('kontak');
 Route::get('/pesan', [App\Http\Controllers\HomeController::class, 'pesan'])->name('pesan');
+Route::get('/toko/cari', [App\Http\Controllers\HomeController::class, 'cari'])->name('cari');
+// Route::get('/', [App\Http\Controllers\HomeController::class, 'pencari'])->name('pesan');
 // Route::get('/kontak', 
 // [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 

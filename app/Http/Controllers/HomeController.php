@@ -30,7 +30,7 @@ class HomeController extends Controller
     }
     public function toko()
     {
-        $produk = DB::table('produk')->get();
+        $produk = DB::table('produk')->paginate(10);
         return view('toko',['produk' => $produk ]);
 
     }
@@ -46,5 +46,16 @@ class HomeController extends Controller
 		'pesan_customer' => $request->pesan,
         ]);
         return redirect('/kontak');
+    }
+
+
+    public function cari(Request $request)
+    {
+        $cari = $request->cari;
+        $produk = DB::table('produk')
+		->where('nama_produk','like',"%".$cari."%")
+		->paginate();
+        return view('toko',['produk' => $produk ]);
+
     }
 }
