@@ -284,6 +284,11 @@ iframe {
     list-style: none;
 }
 
+.user-name {
+    text-transform: capitalize;
+    color: teal;
+}
+
 
 
 
