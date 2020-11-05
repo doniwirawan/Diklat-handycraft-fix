@@ -23,7 +23,7 @@
     </aside>
     <nav >
         <img src="{{ URL::to('img/avatar.jpg') }}" alt="" class="avatar ml-2">
-        <form action="">
+        <form action="" class="form-navbar">
             <div class="input-group mb-3 mt-2 ml-4 ">
                 <input type="text" class="form-control " placeholder="Cari Barang Anda..."
                     aria-label="Recipient's username" aria-describedby="basic-addon2">
@@ -36,7 +36,7 @@
         </div>
         <i class="fas fa-bars desktop-none fa-3x" id="toggle-nav"></i>
     </nav>
-    <div class="main-content">
+    <div class="main-content mb-5">
         <div class="content">
             
            @yield('konten')
