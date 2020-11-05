@@ -17,12 +17,13 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
-Route::get('/', function () {
-    return view('beranda');
-});
-Route::get('/login', function () {
-    return view('login');
-});
+// Route::get('/', function () {
+//     return view('home');
+// });
+// Route::get('/login', function () {
+//     return view('login');
+// });
+Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::get('/toko', function () {
     return view('toko');
@@ -30,3 +31,7 @@ Route::get('/toko', function () {
 Route::get('/kontak', function () {
     return view('kontak');
 });
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

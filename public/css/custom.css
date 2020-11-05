@@ -8,6 +8,16 @@
 
 }
 
+a.text-theme1 {
+    color: #2A9D8F;
+
+}
+
+rgb(8, 117, 104) a.text-theme1:hover {
+    color: #2A9D8F;
+
+}
+
 .text-theme1.h2:hover {
     color: #155e55;
     text-decoration: none;
@@ -28,7 +38,7 @@
 
 .w-under {
     border-bottom: 2px solid #2A9D8F;
-    max-width: 190px;
+    max-width: 290px;
     padding: 10px;
 }
 
@@ -130,7 +140,9 @@ div .input-group-text {
 }
 
 nav form {
-    width: 65%;
+    width: 50%;
+    position: relative;
+    left: -30px;
 }
 
 nav .avatar {
@@ -264,6 +276,13 @@ iframe {
 
 }
 
+.dropup,
+.dropright,
+.dropdown,
+.dropleft {
+    position: relative;
+    list-style: none;
+}
 
 
 
@@ -398,7 +417,7 @@ iframe {
     }
 
     nav form {
-        width: 85%;
+        width: 75%;
     }
 
     nav .avatar {
