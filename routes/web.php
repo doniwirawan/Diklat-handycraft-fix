@@ -20,6 +20,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('beranda');
 });
+Route::get('/login', function () {
+    return view('login');
+});
 
 Route::get('/toko', function () {
     return view('toko');

@@ -5,6 +5,7 @@
 
 .text-theme1 {
     color: #2A9D8F;
+
 }
 
 .text-theme1.h2:hover {
@@ -21,13 +22,14 @@
 .btn-theme:hover {
 
     background-color: #ffff;
-    border: 2px solid #2a9dbf;
-    color: #2a9dbf;
+    border: 2px solid #2A9D8F;
+    color: #2A9D8F;
 }
 
 .w-under {
     border-bottom: 2px solid #2A9D8F;
     max-width: 190px;
+    padding: 10px;
 }
 
 /* mobile size media query */
@@ -249,6 +251,19 @@ iframe {
 .form-kontak textarea {
     border: 1px solid #2A9D8F;
 }
+
+.login-box {
+    position: relative;
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+    margin: 0 auto;
+    top: 20px;
+    height: 95vh;
+
+
+}
+
 
 
 
@@ -492,5 +507,27 @@ iframe {
         left: -20px;
         height: 450px;
 
+    }
+
+    .login-box {
+        position: relative;
+        padding: 30px;
+        border-radius: 10px;
+        width: 500px;
+        margin: 0 auto;
+        top: 250px;
+        height: auto;
+        background-color: rgba(255, 255, 255, 0.5);
+        z-index: 9999;
+
+
+    }
+
+    .bg-image {
+        height: 100vh;
+        background-image: url('https://images.unsplash.com/photo-1576495169018-bd2414046c6b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1294&q=80');
+        background-size: cover;
+        object-fit: cover;
+        /* filter: blur(50px); */
     }
 }
