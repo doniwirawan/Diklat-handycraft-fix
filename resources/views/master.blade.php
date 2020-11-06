@@ -27,8 +27,8 @@
     <nav>
         <a href=""><img src="{{ URL::to('img/avatar.jpg') }}" alt="" class="avatar ml-2"></a>
         <li class="nav-item dropdown">
-            <a id="navbarDropdown" class="nav-link user-name dropdown-toggle" href="#" role="button" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false" v-pre>
+            <a id="navbarDropdown" class="nav-link user-name dropdown-toggle" href="#" role="button"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                 {{ Auth::user()->name }}
             </a>
 
@@ -46,7 +46,7 @@
         <form action="/toko/cari" class="form-navbar" method="get">
             <div class="input-group mb-3 mt-2 ml-4 ">
                 <input type="text" class="form-control " placeholder="Cari Barang Anda..."
-                    aria-label="Recipient's username" aria-describedby="basic-addon2" name="cari" > 
+                    aria-label="Recipient's username" aria-describedby="basic-addon2" name="cari">
                 <button type="submit" class="input-group-text"><i class="fas fa-search  fa-2x"></i></button>
             </div>
         </form>
