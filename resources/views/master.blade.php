@@ -19,7 +19,7 @@
         <img src="{{ URL::to('img/logo.png') }}" alt="" class="logo">
         <a href="{{ url('/') }}" class="{{ Request::is('/*') ? 'active' : '' }}"><i
                 class="fas fa-home m-3 "></i>Beranda</a>
-        <a href="{{ url('toko') }}" class="{{ Request::is('toko*') ? 'active' : '' }}"><i
+        <a href="{{ url('toko') }}" class="{{ Request::is('toko*') || Request::is('cari*') ? 'active' : '' }}"><i
                 class="fas fa-store m-3"></i>Toko</a>
         <a href="{{ url('kontak') }}" class="{{ Request::is('kontak*') ? 'active' : '' }}"><i
                 class="fas fa-address-book m-3"></i>Kontak</a>
@@ -43,7 +43,7 @@
                 </form>
             </div>
         </li>
-        <form action="/toko/cari" class="form-navbar" method="get">
+        <form action="/cari" class="form-navbar" method="get">
             <div class="input-group mb-3 mt-2 ml-4 ">
                 <input type="text" class="form-control " placeholder="Cari Barang Anda..."
                     aria-label="Recipient's username" aria-describedby="basic-addon2" name="cari">

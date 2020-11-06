@@ -26,7 +26,7 @@ Route::get('/kontak', [App\Http\Controllers\HomeController::class, 'kontak'])->n
 Route::get('/pesan', [App\Http\Controllers\HomeController::class, 'pesan'])->name('pesan');
 
 
-Route::get('/toko/cari', [App\Http\Controllers\HomeController::class, 'cari'])->name('cari');
+Route::get('/cari', [App\Http\Controllers\HomeController::class, 'cari'])->name('cari');
 
 Auth::routes();
 

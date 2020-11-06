@@ -72,7 +72,7 @@ class HomeController extends Controller
         $produk = DB::table('produk')
 		->where('nama_produk','like',"%".$cari."%")
 		->paginate();
-        return view('toko',['produk' => $produk ]);
+        return view('cari',['produk' => $produk ]);
 
     }
 }
