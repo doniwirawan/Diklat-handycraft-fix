@@ -4,15 +4,16 @@
 	<div class="container-fluid">
                     @foreach($produk as $p) 
                         <div class="card" >
-                            <img src="https://images.unsplash.com/photo-1576495169018-bd2414046c6b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1294&q=80"
+                            <img src="{{ $p->gambar_produk }}"
                                 class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">{{ $p->nama_produk }}</h5>
                                 <p class="card-text">{{ $p->deskripsi_produk }}</p>
-                                <a href="#" class="btn btn-primary btn-doni">Go somewhere</a>
+                                 <p class="card-text harga">$ {{ $p->harga_produk }}</p>
+                                <a href="#" class="btn btn-primary btn-doni">Beli Sekarang</a>
                             </div>
                         </div> 
                     @endforeach
-                    
+    </div>               
  
 @endsection

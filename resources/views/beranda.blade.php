@@ -2,12 +2,29 @@
 @section('konten')
  
 	<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
+            <ol class="carousel-indicators">
+                @foreach($produk as $p) 
+                    <li data-target="#carouselExampleIndicators" data-slide-to="{{$p->id}}"></li>
+                @endforeach
+            </ol>
+
+
+                <!-- <ol class="carousel-indicators">
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
+                </ol> -->
                 <div class="carousel-inner">
+                    @foreach($produk as $p) 
+                        <div class="carousel-item {{ $p->id==1 ? 'active' : '' }}">
+                            <img src="{{ $p->gambar_produk }}"
+                                class="d-block w-100" alt="...">
+                        </div>
+                    @endforeach
+                </div>
+
+
+                <!-- <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img src="https://images.unsplash.com/photo-1569172122301-bc5008bc09c5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
                             class="d-block w-100" alt="...">
@@ -20,7 +37,7 @@
                         <img src="https://images.unsplash.com/photo-1570393080660-de4e4a15a247?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80"
                             class="d-block w-100" alt="...">
                     </div>
-                </div>
+                </div> -->
                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="sr-only">Previous</span>
@@ -35,7 +52,7 @@
             <div class="container-fluid">
                 <div class="row mt-4 row-mobile">
                     @foreach($produk as $p)
-                     <div class="col-sm inline-block">
+                     <!-- <div class="col-sm inline-block">
                         <div class="card" >
                             <img src="{{ $p->gambar_produk }}"
                                 class="card-img-top" alt="...">
@@ -45,7 +62,18 @@
                                 <a href="#" class="btn btn-primary btn-doni">Go somewhere</a>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
+
+                    <div class="card" >
+                            <img src="{{ $p->gambar_produk }}"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">{{ $p->nama_produk }}</h5>
+                                <p class="card-text">{{ $p->deskripsi_produk }}</p>
+                                 <p class="card-text harga">$ {{ $p->harga_produk }}</p>
+                                <a href="#" class="btn btn-primary btn-doni">Beli Sekarang</a>
+                            </div>
+                        </div> 
 
 
 
