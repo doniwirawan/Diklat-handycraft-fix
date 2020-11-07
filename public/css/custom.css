@@ -140,7 +140,7 @@ div .input-group-text {
 }
 
 nav form {
-    width: 50%;
+    width: 100%;
     position: relative;
     left: -30px;
 }
@@ -153,8 +153,9 @@ nav .avatar {
 }
 
 .icon {
-    display: none;
-    right: 0;
+    display: flex;
+    position: relative;
+    margin-right: 70px;
 
 }
 
@@ -332,9 +333,29 @@ iframe {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* desktop size media query */
 
-@media (min-width:700px) {
+@media (min-width:1800px) {
 
     aside {
         width: 25%;
@@ -416,7 +437,7 @@ iframe {
     div .input-group-text {
         border-radius: 0 50px 50px 0 !important;
         height: 50px;
-        width: 70px !important;
+        width: 130px !important;
         border: 1px solid #727272;
         background: white;
         border-left: none;
@@ -428,7 +449,8 @@ iframe {
     }
 
     nav form {
-        width: 75%;
+        width: 100%;
+        padding-right: 190px;
     }
 
     nav .avatar {
@@ -440,8 +462,9 @@ iframe {
 
     .icon {
         display: relative;
-
+        width: 200px;
         right: 0;
+        /* margin-left: 20px; */
 
     }
 

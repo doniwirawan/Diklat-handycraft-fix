@@ -25,7 +25,7 @@
                 class="fas fa-address-book m-3"></i>Kontak</a>
     </aside>
     <nav>
-        <a href=""><img src="{{ URL::to('img/avatar.jpg') }}" alt="" class="avatar ml-2"></a>
+        <a href=""><img src="{{ URL::to('img/avatar.jpg') }}" alt="" class="avatar ml-2 img-fluid"></a>
         <li class="nav-item dropdown">
             <a id="navbarDropdown" class="nav-link user-name dropdown-toggle" href="#" role="button"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
@@ -51,7 +51,7 @@
             </div>
         </form>
 
-        <div class="icon ml-auto ">
+        <div class="icon  ">
             <a href=""><i class="fas fa-bell fa-2x m-2"></i></a>
             <a href=""><i class="fas fa-shopping-cart fa-2x m-2"></i></a>
         </div>
