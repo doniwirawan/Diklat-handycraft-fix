@@ -47,7 +47,7 @@
             <div class="input-group mb-3 mt-2 ml-4 ">
                 <input type="text" class="form-control " placeholder="Cari Barang Anda..."
                     aria-label="Recipient's username" aria-describedby="basic-addon2" name="cari">
-                <button type="submit" class="input-group-text"><i class="fas fa-search  fa-2x"></i></button>
+                <button type="submit" class="input-group-text"><i class="fas fa-search  fa-2x text-center"></i></button>
             </div>
         </form>
 
