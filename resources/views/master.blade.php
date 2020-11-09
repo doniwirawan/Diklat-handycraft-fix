@@ -25,7 +25,7 @@
                 class="fas fa-address-book m-3"></i>Kontak</a>
     </aside>
     <nav>
-        <a href=""><img src="{{ URL::to('img/avatar.jpg') }}" alt="" class="avatar ml-2 img-fluid"></a>
+        <a href=""><img src="{{ URL::to('img/avatar.jpg') }}" alt="" class="avatar ml-2 "></a>
         <li class="nav-item dropdown">
             <a id="navbarDropdown" class="nav-link user-name dropdown-toggle" href="#" role="button"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
