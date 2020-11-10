@@ -10,7 +10,7 @@
     <div class="carousel-inner">
         @foreach($produk as $p)
         <div class="carousel-item {{ $p->id==1 ? 'active' : '' }}">
-            <img src="{{ $p->gambar_produk }}" class="d-block w-100" alt="...">
+            <img src="{{ $p->gambar_produk }}" class="d-block w-100" alt="..." loading=lazy>
         </div>
         @endforeach
     </div>
