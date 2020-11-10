@@ -9,7 +9,7 @@
             <h5 class="card-title">{{ $p->nama_produk }}</h5>
             <p class="card-text">{{ $p->deskripsi_produk }}</p>
             <p class="card-text harga">$ {{ $p->harga_produk }}</p>
-            <a href="https://wa.me/6287752375904?text=saya%20tertarik%20dengan%20karya%20seni%20Anda%20" class="btn btn-primary btn-doni">Beli Sekarang</a>
+            <a href="https://wa.me/6287752375904?text=Saya%20tertarik%20dengan%20Karya%20Seni%20Anda%20" class="btn btn-primary btn-doni">Beli Sekarang</a>
         </div>
     </div>
     @endforeach
