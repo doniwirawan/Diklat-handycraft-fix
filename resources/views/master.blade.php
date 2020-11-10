@@ -12,7 +12,7 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/custom.css') }}" rel="stylesheet" />
 </head>
-
+<title>Handycraft.co</title>
 <body>
     <aside id="sidebar">
         <i class="fas fa-times desktop-none close-sidebar fa-3x"></i>
