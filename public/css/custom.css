@@ -15,7 +15,7 @@
  * animation slide-left
  * ----------------------------------------
  */
-@-webkit-keyframes slide-left {
+/* @-webkit-keyframes slide-left {
     0% {
         -webkit-transform: translateX(0);
         transform: translateX(0);
@@ -37,7 +37,7 @@
         -webkit-transform: translateX(-300px);
         transform: translateX(-300px);
     }
-}
+} */
 
 
 .text-theme1 {
@@ -101,7 +101,7 @@ aside {
     -webkit-box-shadow: -20px 4px 39px -24px rgba(0, 0, 0, 0.62);
     -moz-box-shadow: -20px 4px 39px -24px rgba(0, 0, 0, 0.62);
     box-shadow: -20px 4px 39px -24px rgba(0, 0, 0, 0.62);
-    right: -300px;
+    /* right: -300px; */
 }
 
 aside img {
