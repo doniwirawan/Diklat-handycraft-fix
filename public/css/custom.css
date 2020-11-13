@@ -193,11 +193,14 @@ nav .avatar {
     display: flex;
     position: relative;
     margin-right: 70px;
+    opacity: 0;
 
 }
 
 .icon a {
     color: #727272;
+    opacity: 0;
+
 }
 
 .fa-bars {
@@ -510,12 +513,15 @@ iframe {
         display: relative;
         width: 200px;
         right: 0;
+        opacity: 0;
         /* margin-left: 20px; */
 
     }
 
     .icon a {
         color: #727272;
+        opacity: 0;
+
     }
 
     .main-content {
