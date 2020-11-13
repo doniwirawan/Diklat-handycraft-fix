@@ -10,7 +10,7 @@
     <div class="carousel-inner">
         @foreach($produk as $p)
         <div class="carousel-item {{ $p->id==1 ? 'active' : '' }}">
-            <img src="{{ $p->gambar_produk }}" class="d-block w-100" alt="..." loading="lazy">
+            <img src="img/{{ $p->gambar_produk }}" class="d-block w-100" alt="..." loading="lazy">
         </div>
         @endforeach
     </div>
@@ -33,7 +33,7 @@
         @foreach($produk as $p)
 
         <div class="card">
-            <img src="{{ $p->gambar_produk }}" class="card-img-top" alt="...">
+            <img src="img/{{ $p->gambar_produk }}" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">{{ $p->nama_produk }}</h5>
                 <p class="card-text">{{ $p->deskripsi_produk }}</p>

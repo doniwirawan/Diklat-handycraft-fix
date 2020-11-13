@@ -16,6 +16,29 @@ use Illuminate\Support\Facades\DB;
 
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('beranda');
 
+Route::get('/admin', [App\Http\Controllers\HomeController::class, 'admin_konten'])->name('admin_konten');
+
+
+
+
+Route::get('/admin_konten', [App\Http\Controllers\HomeController::class, 'admin_konten'])->name('admin_konten');
+
+
+
+
+Route::get('/admin_komentar', [App\Http\Controllers\HomeController::class, 'admin_komentar'])->name('admin_komentar');
+
+
+Route::get('/admin_komentar/hapus/{id}', [App\Http\Controllers\HomeController::class, 'hapus'])->name('hapus');
+
+Route::get('/admin_konten/hapus/{id}', [App\Http\Controllers\HomeController::class, 'hapuss'])->name('hapuss');
+
+Route::get('/admin_konten/edit/{id}', [App\Http\Controllers\HomeController::class, 'edit'])->name('edit');
+
+Route::post('/admin_konten/update', [App\Http\Controllers\HomeController::class, 'update'])->name('update');
+
+Route::post('admin_konten/store', [App\Http\Controllers\HomeController::class, 'store'])->name('store');
+
 
 Route::get('/toko', [App\Http\Controllers\HomeController::class, 'toko'])->name('toko');
 
