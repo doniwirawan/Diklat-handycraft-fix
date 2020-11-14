@@ -1,7 +1,7 @@
 @extends('admin')
 @section('konten')
 
-<h1>Edit Produk</h1>
+<h1>Edit Data Produk</h1>
 @foreach($produk as $p)
 	<form action="/admin_konten/update" method="post">
 		{{ csrf_field() }}
@@ -20,6 +20,10 @@
         <div class="form-group   col-lg-12">
             <label for="exampleFormControlInput1">Deksripsi Produk</label>
             <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Harga  produk" name="deskripsi_produk" required="required" value="{{ $p->deskripsi_produk }}">
+        </div>
+        <div class="form-group   col-lg-12">
+            <label for="exampleFormControlInput1">Rating Produk</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="rating  produk" name="rating_produk" required="required" value="{{ $p->rating_produk }}">
         </div>
 
          <!-- <div class="form-group  col-lg-12">

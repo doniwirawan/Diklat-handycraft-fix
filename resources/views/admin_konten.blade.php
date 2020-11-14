@@ -1,15 +1,15 @@
 @extends('admin')
 @section('konten')
-<h1>Input Data</h1>
-    <form action="/admin_konten/store" method="POST">
+<h1>Input Data Produk</h1>
+    <form action="/admin_konten/store" method="POST" class="mt-4">
 		{{ csrf_field() }}
 		<div class="form-group  col-lg-12"> 
             <label for="exampleFormControlInput1">Nama Produk</label>
-            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="nama produk" name="nama_produk">
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nama Produk" name="nama_produk">
         </div>
 		<div class="form-group   col-lg-12">
             <label for="exampleFormControlInput1">Harga Produk</label>
-            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Harga  produk" name="harga_produk">
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Harga  Produk" name="harga_produk">
         </div>
 
         <div class="form-group  col-lg-12">
@@ -28,12 +28,12 @@
     <h1 class="mt-5">List Produk</h1>
     <table class="table mt-5">
 		<tr>
-			<th scope="col">id</th>
-			<th scope="col">gambar_produk</th>
-			<th scope="col">nama produk</th>
-			<th scope="col">deskripsi produk</th>
-			<th scope="col">harga produk</th>
-			<th scope="col">rating produk</th>
+			<th scope="col">ID</th>
+			<th scope="col">Gambar Produk</th>
+			<th scope="col">Nama Produk</th>
+			<th scope="col">Deskripsi Produk</th>
+			<th scope="col">Harga Produk</th>
+			<th scope="col">Rating Produk</th>
 			<th scope="col">Tgl Masuk</th>
 			<th scope="col">Aksi</th>
 			
@@ -41,15 +41,16 @@
 		@foreach($produk as $p)
 		<tr>
 			<td scope="row">{{ $p->id }}</td>
-			<td>{{ $p->gambar_produk }}</td>
+			<td><img src="img/{{ $p->gambar_produk }}" alt="" class="thumbnail"></td>
 			<td>{{ $p->nama_produk }}</td>
 			<td>{{ $p->deskripsi_produk }}</td>
-			<td>{{ $p->harga_produk }}</td>
-			<td>{{ $p->rating_produk }}</td>
+			<td class="text-danger font-weight-bold">$ {{ $p->harga_produk }}</td>
+			<td >{{ $p->rating_produk }}</td>
 			<td>{{ $p->tanggal_masuk }}</td>
 			<td>
-				<a href="/admin_konten/hapus/{{ $p->id }}">Hapus</a>
-				<a href="/admin_konten/edit/{{ $p->id }}">Edit</a>
+			<button type="button" class="btn btn-danger"><a href="/admin_konten/hapus/{{ $p->id }}">Hapus</a></button>
+			<button type="button" class="btn btn-primary mt-2"><a href="/admin_konten/edit/{{ $p->id }}">Edit</a></button>	
+				
 			</td>
 		</tr>
 		@endforeach

@@ -71,7 +71,7 @@ class HomeController extends Controller
 
     public function toko()
     {
-        $produk = DB::table('produk')->paginate(10);
+        $produk = DB::table('produk')->paginate(5);
         return view('toko',['produk' => $produk ]);
 
     }

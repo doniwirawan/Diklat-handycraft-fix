@@ -152,6 +152,18 @@ body {
     color: var(--page-header-headingColor);
 }
 
+img.thumbnail {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.btn a:hover {
+    text-decoration: none;
+    color: white;
+}
+
 .page-header .admin-menu svg {
     width: 20px;
     height: 20px;

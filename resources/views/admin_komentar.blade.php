@@ -17,8 +17,8 @@
 			<td>{{ $p->pesan_customer }}</td>
 			<td>{{ $p->tanggal_masuk }}</td>
 			<td>
+				<button type="button" class="btn btn-danger"><a href="/admin_komentar/hapus/{{ $p->id_customer  }}">Hapus</a></button>
 				
-				<a href="/admin_komentar/hapus/{{ $p->id_customer  }}">Hapus</a>
 			</td>
 		</tr>
 		@endforeach
